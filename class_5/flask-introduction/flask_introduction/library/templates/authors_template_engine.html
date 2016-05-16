@@ -1,0 +1,9 @@
+<html>
+    <h1>This is the list of authors (With engine):</h1>
+    <pre>Debug: {{authors}}</pre>
+    <ul>
+        {% for author in authors %}
+            <li>{{author['id']}}: {{author['name']}}</li>
+        {% endfor %}
+    </ul>
+</html>
